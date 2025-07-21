@@ -1,0 +1,11 @@
+requests
+    pip install requests
+
+beautifulsoup4
+	pip install beautifulsoup4
+
+dnspython
+    pip install dnspython
+
+python-whois
+    pip install python-whois
