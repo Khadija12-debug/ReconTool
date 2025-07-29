@@ -65,7 +65,7 @@ def generate_report(target_ip, target_domain, output_dir="reports"):
             # Technology Detection
             report.write("\n[+] Web Technology Fingerprinting:\n")
             if target_domain:
-                techs = detect_technologies(f"http://{target_domain}")  # or https
+                techs = detect_technologies(f"http://{target_domain}")  
             else:
                 techs = detect_technologies(f"http://{target_ip}")
 
