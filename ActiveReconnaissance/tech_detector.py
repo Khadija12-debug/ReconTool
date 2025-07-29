@@ -51,3 +51,5 @@ def detect_technologies(url):
             print("  -", tech)
     else:
         print("[-] No obvious technologies detected.")
+
+    return list(set(techs))    

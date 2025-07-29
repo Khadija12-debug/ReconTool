@@ -69,4 +69,10 @@ def generate_report(target_ip, target_domain, output_dir="reports"):
             else:
                 detect_technologies(f"http://{target_ip}")
 
+            if techs:
+                for t in techs:
+                    report.write(f"  - {t}\n")  
+            else:
+                report.write("  [-] No obvious technologies detected.\n")
+
     print(f"\n[+] Report generated: {filename}")
